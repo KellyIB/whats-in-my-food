@@ -1,0 +1,13 @@
+<h2><%= facade.search_results_count %> Search Results for '<%= facade.search_term %>'</h2>
+
+<div class="search_results">
+  <% facade.search_results.each do |food| %>
+    <ul class="search_results-food">
+      <li class="food-ndb"><%= food.ndb %></li>
+      <li class="food-name"><%= food.name %></li>
+      <li class="food-group"><%= food.group %></li>
+      <li class="food-data_source"><%= food.data_source %></li>
+      <li class="food-manufacturer"><%= food.manufacturer %></li>
+    </ul>
+  <% end %>
+</div>
